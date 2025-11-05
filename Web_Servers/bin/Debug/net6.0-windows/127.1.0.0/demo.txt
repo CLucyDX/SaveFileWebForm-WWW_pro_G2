@@ -1,0 +1,16 @@
+Server:
+1. 介绍status bar
+2. IP操作（多开几个，多关几个）
+3.  Create
+IP address, domain name (试错)
+创建完成后展示管理 
+4. 文件存储
+
+Browser:
+1. URL jump bar:
+IP/URL (展示后端)
+
+2. search:
+展示不一样的文件类型（jpg,png,mp3,mp4,html,pdf）
+IP/URL (关闭服务器后再次搜索，展示后端500)
+输入不存在的展示404

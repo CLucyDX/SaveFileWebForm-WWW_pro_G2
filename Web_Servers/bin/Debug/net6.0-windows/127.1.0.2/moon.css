@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 整体背景设置 */
+body{
+    /* 100% window */
+    height: 100vh;
+    /* 弹性布局 居中*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 渐变色 背景设置*/
+    background: linear-gradient(to top, #1e3c72,#2a5298);
+}
+/* 对 body 中唯一 div 进行设置*/
+.loader{
+    width: 125px;
+    /*将位置变为相对定位，按我的理解是以父级的位置进行定位，如果是绝对定位就是在页面的像素上进行调位*/
+    position: relative;
+    /*视距设置*/
+    perspective: 200px;
+}
+/*动画前效果*/
+.loade::before,
+/*动画后效果*/
+.loader::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    /*div变后背景颜色*/
+    background-color: transparent;
+    /*绝对定位*/
+    position: absolute;
+    /*执行动画效果：动画名  时常  慢速开始慢速结束中间加快*/
+    animation: jumping 0.5s ease infinite alternate;
+}
+
+.loade::before{
+    left: 0;
+}
+.loader::after{
+    right: 0;
+    /*动画延迟*/
+    animation-delay: 0.15s;
+}
+
+/*定义动画效果*/
+@keyframes jumping{
+    0%{
+        transform: scale(1) translateY(0) rotateX(0);
+        box-shadow: 0 0 0 transparent;
+    }
+    100%{
+        background-color: #fff;
+        transform: scale(1.2)translateY(-55xp)rotateX(45deg);
+        box-shadow: 0 55px 100px #fff;
+    }
+}

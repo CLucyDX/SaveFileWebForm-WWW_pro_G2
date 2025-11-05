@@ -1,0 +1,5 @@
+1. Abstract + 排版  1:wty
+2. Introduction (story background, model iteration RNN,transformer,BERT) 1:scx
+3. Literature Review 
+（model: transformer(BERT), fuzzy logic）
+               2 : xqw, hsy                             1 :wyf
